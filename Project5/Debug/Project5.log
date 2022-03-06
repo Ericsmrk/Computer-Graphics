@@ -1,0 +1,9 @@
+﻿  Project05.cpp
+C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Project05.cpp(296,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Project05.cpp(305,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Project05.cpp(309,27): warning C4018: '<': signed/unsigned mismatch
+soil2-debug.lib(SOIL2.obj) : warning LNK4099: PDB 'soil2-static-lib.pdb' was not found with 'soil2-debug.lib(SOIL2.obj)' or at 'C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Debug\soil2-static-lib.pdb'; linking object as if no debug info
+soil2-debug.lib(image_DXT.obj) : warning LNK4099: PDB 'soil2-static-lib.pdb' was not found with 'soil2-debug.lib(image_DXT.obj)' or at 'C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Debug\soil2-static-lib.pdb'; linking object as if no debug info
+soil2-debug.lib(image_helper.obj) : warning LNK4099: PDB 'soil2-static-lib.pdb' was not found with 'soil2-debug.lib(image_helper.obj)' or at 'C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Debug\soil2-static-lib.pdb'; linking object as if no debug info
+soil2-debug.lib(wfETC.obj) : warning LNK4099: PDB 'soil2-static-lib.pdb' was not found with 'soil2-debug.lib(wfETC.obj)' or at 'C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Debug\soil2-static-lib.pdb'; linking object as if no debug info
+  Project5.vcxproj -> C:\Users\Erics\Desktop\Fall 2021\172-Computer Graphics\Projects\Project5\Debug\Project5.exe

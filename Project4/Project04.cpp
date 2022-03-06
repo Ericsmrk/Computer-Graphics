@@ -241,7 +241,7 @@ static void display(void)
     //creates viewing matrix derived from an eye point, 
     //a reference point indicating the center of the scene, and an UP vector.
     //(eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ)
-    gluLookAt(camX, camY, 3, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    gluLookAt(camX, camY, 3, camX, camY, 0.0, 0.0, 1.0, 0.0);
 
     if (WireFrame)
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);//Draw Our Mesh In Wireframe Mesh
@@ -399,7 +399,6 @@ static void key(unsigned char key, int x, int y)
         if (DEBUG) cout << "\nWireframe..\n";
         WireFrame = !WireFrame;//change the wireframe flag back and forth
         break;
-
     }
 }
 

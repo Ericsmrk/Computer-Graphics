@@ -1,0 +1,41 @@
+window.ALLY_CFG = {
+    'baseUrl': 'https://prod.ally.ac',
+    'clientId': 2810
+};
+$.getScript(ALLY_CFG.baseUrl + '/integration/canvas/ally.js');
+
+// janq@FresnoState last updated: 2018/08/13
+// $.get('https://publish.video.fresnostate.edu/canvas.php');
+
+// janq@FresnoState last updated: 2018/08/18
+$(document).ready(function() {
+    $('#global_nav_profile_link').on('click', function() {
+        function onElementRendered(selector, cb, _attempts) {
+            var el = $(selector);
+            _attempts = ++_attempts || 1;
+            if (el.length) return cb(el);
+            if (_attempts == 60) return;
+            setTimeout(function() {
+                onElementRendered(selector, cb, _attempts);
+            }, 250);
+        }
+
+        onElementRendered("div.tray-with-space-for-global-nav > div > ul", function(el) {
+
+            // add Pathbrite Program eP link thru Bb via CAS
+            if ($("#custom_pathbrite_account_link").length) {
+
+            } else {
+                el.append('<li id="custom_pathbrite_account_link"><a href="https://cas.csufresno.edu/login?service=https%3A%2F%2Ftiny.cc%2FFSPB2018F" target="_blank">Program ePortfolios</a></li>');
+                document.cookie = "Pathbrite=" + escape("Max Rocks");
+            }
+
+            // mask eP
+            $("a[href='/dashboard/eportfolios']").attr('target', '_blank')
+            $("a[href='/dashboard/eportfolios']").attr('href', 'https://cas.csufresno.edu/login?service=https%3A%2F%2Ftiny.cc%2FFSPBTAB2018F')
+
+        });
+
+    });
+});
+
